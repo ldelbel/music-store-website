@@ -1,0 +1,82 @@
+$spaceamounts: (0,1,2,3,4,5);
+$dark: #383838;
+$light: #888;
+$red: #d35266;
+
+// MARGIN CLASSES
+@each $space in $spaceamounts {
+  m-#{$space} {
+    margin: #{$space}em;
+  }
+
+  my-#{$space} {
+    margin: #{$space}em 0;
+  }
+
+  mx-#{$space} {
+    margin: 0 #{$space}em;
+  }
+
+  mt-#{$space} {
+    margin-top: #{$space}em;
+  }
+
+  ml-#{$space} {
+    margin-left: #{$space}em;
+  }
+
+  mb-#{$space} {
+    margin-bottom: #{$space}em;
+  }
+
+  mr-#{$space} {
+    margin-right: #{$space}em;
+  }
+}
+
+// PADDING CLASSES
+@each $space in $spaceamounts {
+  p-#{$space} {
+    padding: #{$space}em;
+  }
+
+  py-#{$space} {
+    padding: #{$space}em 0;
+  }
+
+  px-#{$space} {
+    padding: 0 #{$space}em;
+  }
+
+  pt-#{$space} {
+    padding-top: #{$space}em;
+  }
+
+  pl-#{$space} {
+    padding-left: #{$space}em;
+  }
+
+  pb-#{$space} {
+    padding-bottom: #{$space}em;
+  }
+
+  pr-#{$space} {
+    padding-right: #{$space}em;
+  }
+}
+
+.bg-dark {
+  background-color: #{$dark};
+}
+
+.bg-red {
+  background-color: #{$red};
+}
+
+.bg-light {
+  background-color: #{$light};
+}
+
+.bg-white {
+  background-color: #fff;
+}
