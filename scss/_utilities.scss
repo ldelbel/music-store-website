@@ -1,70 +1,116 @@
 $spaceamounts: (0,1,2,3,4,5);
 $dark: #383838;
 $light: #888;
+$lg: #F3F3F3;
 $red: #d35266;
+
+// WIDTH & HEIGHT               00000000000000000000000000000000000000
+.w-mc {
+  width: max-content;
+}
+
+// CUSTOM FLEX              0000000000000000000000000000000000 
+.flex {
+  display: flex; 
+}
+
+.ai-c {
+  @extend .flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+
+.jc-c {
+  @extend .flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+
+.jc-sb {
+  @extend .flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+}
 
 // MARGIN CLASSES
 @each $space in $spaceamounts {
-  m-#{$space} {
+  .m-#{$space} {
     margin: #{$space}em;
   }
 
-  my-#{$space} {
+  .my-#{$space} {
     margin: #{$space}em 0;
   }
 
-  mx-#{$space} {
+  .mx-#{$space} {
     margin: 0 #{$space}em;
   }
 
-  mt-#{$space} {
+  .mt-#{$space} {
     margin-top: #{$space}em;
   }
 
-  ml-#{$space} {
+  .ml-#{$space} {
     margin-left: #{$space}em;
   }
 
-  mb-#{$space} {
+  .mb-#{$space} {
     margin-bottom: #{$space}em;
   }
 
-  mr-#{$space} {
+  .mr-#{$space} {
     margin-right: #{$space}em;
   }
 }
 
 // PADDING CLASSES
 @each $space in $spaceamounts {
-  p-#{$space} {
+  .p-#{$space} {
     padding: #{$space}em;
   }
 
-  py-#{$space} {
-    padding: #{$space}em 0;
+  .py-#{$space} {
+    padding-top: #{$space / 2}em;
+    padding-bottom: #{$space / 2}em;
   }
 
-  px-#{$space} {
-    padding: 0 #{$space}em;
-  }
-
-  pt-#{$space} {
-    padding-top: #{$space}em;
-  }
-
-  pl-#{$space} {
+  .px-#{$space} {
+    padding-right: #{$space}em;
     padding-left: #{$space}em;
   }
 
-  pb-#{$space} {
+  .pt-#{$space} {
+    padding-top: #{$space}em;
+  }
+
+  .pl-#{$space} {
+    padding-left: #{$space}em;
+  }
+
+  .pb-#{$space} {
     padding-bottom: #{$space}em;
   }
 
-  pr-#{$space} {
+  .pr-#{$space} {
     padding-right: #{$space}em;
+  }
+
+  .px-percent {
+    padding-right: 37.5%;
+    padding-left: 37.5%;
   }
 }
 
+// BACKGROUND COLORS                   0000000000000000000000000000000000000
 .bg-dark {
   background-color: #{$dark};
 }
@@ -77,6 +123,39 @@ $red: #d35266;
   background-color: #{$light};
 }
 
+.bg-lighter {
+  background-color: #{$lg};
+}
+
 .bg-white {
   background-color: #fff;
+}
+
+// BUTTONS                   0000000000000000000000000000000000
+%btn {
+  @extend .py-1;
+  @extend .px-1;
+  border: none;
+  border-radius: 0.2em;
+  font-size: 1em;
+  -webkit-box-shadow: inset 0px 72px 14px -76px rgba(255,255,255,0.65);
+  -moz-box-shadow: inset 0px 72px 14px -76px rgba(255,255,255,0.65);
+  box-shadow: inset 0px 72px 14px -76px rgba(255,255,255,0.65);
+}
+
+.btn-red {
+  @extend %btn;
+  @extend .bg-red;
+  color: #fff;
+}
+
+.btn-dark {
+  @extend %btn;
+  @extend .bg-dark;
+  color: $light;
+}
+
+// IMG STYLING 
+.round {
+  border-radius: 50%;
 }

@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-  <title>Wavves Music Shop</title>
-</head>
-<body>
-  <div class="bg-dark">TESTE UM</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/ad0c4e912f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <title>Wavves Music Shop</title>
+  </head>
+  <body>
+    <header class="bg-dark">
+      <nav class="nav-bar ai-c jc-sb py-1">
+        <div class="nav--left ai-c">
+          <div class="nav__brand mr-5">
+            <div class="nav__brand__logo mr-2">
+              <img
+                class="nav__brand__logo__img"
+                src="images/waves-icon.png"
+                alt="waves-icon"
+              />
+            </div>
+            <div class="nav__brand__name brand-name--sm-w">WAVVES</div>
+          </div>
+
+          <div class="nav__menu ai-c tupper mr-5">
+            <div class="nav__menu__item co-r ai-c mr-4">
+              <div class="nav__menu__item-icon mr-2"><i class="fas fa-home"></i></div>
+              <div class="nav__menu_item-text">home</div>
+            </div>
+
+            <div class="nav__menu__item co-l ai-c mr-4">
+              <div class="nav__menu__item-icon mr-2"><i class="fas fa-record-vinyl"></i></div>
+              <div class="nav__menu_item-text">collection</div>
+            </div>
+
+            <div class="nav__menu__item co-l ai-c mr-4">
+              <div class="nav__menu__item-icon mr-2"><i class="fas fa-shopping-cart"></i></div>
+              <div class="nav__menu_item-text">purchase list</div>
+            </div>
+          </div>
+
+          <button class="nav__button btn-red tupper">post an ad</button>
+        </div>
+        <div class="nav--right ai-c h-100">
+          <div class="messages mr-4"><i class="fas fa-envelope co-l"></i></div>
+          <div class="profile h-100 ai-c">
+            <div class="profile__name co-w mr-2 f-gb">John Doe</div>
+            <div class="profile__img h-100 ai-c"><img class="h-100 round" src="images/face.jpeg" alt="face"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>

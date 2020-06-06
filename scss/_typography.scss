@@ -42,3 +42,64 @@
   url("fonts/grlight/1549fe8fd297f1e6501a3d6ad7f77394.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   url("fonts/grlight/1549fe8fd297f1e6501a3d6ad7f77394.svg#Gotham Rounded Light") format("svg"); /* iOS 4.1- */
 }
+
+
+// BRAND NAME STYLING
+.brand-name {
+  font-family: 'Fascinate', cursive;
+
+  &--sm-w {
+    @extend .brand-name;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  &--lg-w {
+    @extend .brand-name;
+    color: white;
+  }
+}
+
+// TRANSFORM UPPERCASE
+.tupper {
+  text-transform: uppercase;
+}
+
+// FONT COLORS
+.co-w {
+  color: #fff;
+}
+
+.co-d {
+  color: $dark;
+}
+
+.co-r {
+  color: $red;
+}
+
+.co-l {
+  color: $light;
+}
+
+// FONT CLASSES
+
+.f-hl {
+  font-family: "Helvetica Neue Light";
+}
+
+.f-hm {
+  font-family: "Helvetica Neue 65 Medium";
+}
+
+.f-hb {
+  font-family: "Helvetica Neue 77 Bold Condensed";
+}
+
+.f-gb {
+  font-family: "Gotham Bold";
+}
+
+.f-gl {
+  font-family: "Gotham Rounded Light";
+}

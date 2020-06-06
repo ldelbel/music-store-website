@@ -1,7 +1,29 @@
 @import 'utilities';
 @import 'typography';
 
-div {
-  font-family: 'Gotham Rounded Light';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 3.8125em;
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+.nav__brand {
+  @extend .w-mc;
+  display: flex;
+}
+
+.nav__brand__name {
+  margin: auto 0;
+}
+
+.nav__brand__logo__img {
+  height: 3em;
+  filter: invert(40%) sepia(69%) saturate(569%) hue-rotate(301deg) brightness(92%) contrast(88%);
 }
 
