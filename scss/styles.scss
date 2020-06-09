@@ -1,5 +1,6 @@
 @import 'utilities';
 @import 'typography';
+@import 'mediaqueries';
 
 * {
   box-sizing: border-box;
@@ -23,6 +24,14 @@ ul {
 .nav__brand {
   @extend .w-mc;
   display: flex;
+}
+
+::placeholder {
+  color: $dark;
+}
+
+.nav__menu__item {
+  font-size: 0.1em;
 }
 
 .nav__brand__name {
@@ -63,6 +72,13 @@ ul {
   height: 3.1875em;
   border: 0.1em solid $lg-m;
   background-color: white;
+}
+
+.hotads__arrow_circle:hover {
+  @extend .bg-light;
+  cursor: pointer;  
+  border: 0.1em solid $lighter;
+  font-size: 1.2em;
 }
 
 .hotads__main_content-info h3 {
@@ -201,7 +217,7 @@ li {
 .footer__bottom_social a {
   font-size: 1.3em;
   padding-right: 0.7em;
-}
+ }
 
 .footer__bottom_social a:hover {
   font-size: 1.8em;
