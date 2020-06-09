@@ -272,8 +272,16 @@ footer a:focus {
   font-size: 0.9em;
 }
 
+.temp-btn {
+  display: none;
+}
+
 .results__block:hover {
   background-color: white;
+}
+
+.results__block:hover button:first-child {
+  display: inline;
 }
 
 @media only screen and (min-width: 768px) {
