@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="bg-dark">
-      <nav class="nav-bar ai-c jc-sb py-1">
+      <nav class="nav-bar ai-c jc-sb py-1 max-w-80">
         <div class="nav--left ai-c">
           <div class="nav__brand mr-5">
             <div class="nav__brand__logo mr-2">
@@ -37,17 +37,23 @@
 
           <div class="nav__menu ai-c tupper mr-5">
             <div class="nav__menu__item co-r ai-c mr-4">
-              <div class="nav__menu__item-icon mr-2"><i class="fas fa-home"></i></div>
+              <div class="nav__menu__item-icon mr-2">
+                <i class="fas fa-home"></i>
+              </div>
               <div class="nav__menu_item-text">home</div>
             </div>
 
             <div class="nav__menu__item co-l ai-c mr-4">
-              <div class="nav__menu__item-icon mr-2"><i class="fas fa-record-vinyl"></i></div>
+              <div class="nav__menu__item-icon mr-2">
+                <i class="fas fa-record-vinyl"></i>
+              </div>
               <div class="nav__menu_item-text">collection</div>
             </div>
 
             <div class="nav__menu__item co-l ai-c mr-4">
-              <div class="nav__menu__item-icon mr-2"><i class="fas fa-shopping-cart"></i></div>
+              <div class="nav__menu__item-icon mr-2">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
               <div class="nav__menu_item-text">purchase list</div>
             </div>
           </div>
@@ -58,10 +64,420 @@
           <div class="messages mr-4"><i class="fas fa-envelope co-l"></i></div>
           <div class="profile h-100 ai-c">
             <div class="profile__name co-w mr-2 f-gb">John Doe</div>
-            <div class="profile__img h-100 ai-c"><img class="h-100 round" src="images/face.jpeg" alt="face"></div>
+            <div class="profile__img h-100 ai-c">
+              <img class="h-100 round" src="images/face.jpeg" alt="face" />
+            </div>
           </div>
         </div>
       </nav>
     </header>
+    <header class="upper container-fluid bg-red pt-6">
+      <div class="container max-w-80 w-90">
+        <div class="container flex-col ai-c mb-5">
+          <div class="brand-name--lg-w w-mc">WAVVES</div>
+          <h4 class="co-w f-hl w-mc">
+            Your marketplace for buying and selling Musical Instruments
+          </h4>
+        </div>
+        <div class="search container-fluid ai-c jc-sb w-80">
+          <div class="h-search w-85 ai-c">
+            <div class="search__dropdown bg-white h-100 w-20 bord-r-red">
+              <div class="search__dropdown-icon"></div>
+              <div class="search__dropdown-text"></div>
+            </div>
+            <div class="search__question bg-white h-100 w-40 bord-r-red"></div>
+            <div class="search__input bg-white h-100 w-40"></div>
+          </div>
+          <div class="h-100 w-13">
+            <button class="search__button btn-dark w-100">Search</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="hotads py-3 co-l f-hm">
+        <div class="container w-75 ai-c h-100 px-0">
+          <div class="hotads__arrow_circle round w-mc ai-c jc-c co-r"> <
+          </div>
+        
+          <div class="hotads__main flex-col w-90 h-100 px-3">
+            <div class="hotads__main_title pb-3">HOTADS</div>
+            <div class="hotads__main_content jc-sb">
+              <div class="hotads__main_content-img"></div>
+              <div class="hotads__main_content-info w-55 py-3">
+                <h3 class="co-r f-hm">Flamenco Guitar - Cordoba C5</h3>
+                <p class="f-hl co-d">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Reprehenderit alias tempora officia molestiae assumenda
+                  ratione debitis ipsum explicabo voluptates nemo, sequi fugiat
+                  ex animi mollitia enim numquam totam, tempore ut?
+                </p>
+                <p class="co-d">By: <span class="co-l f-hl">John Doe</span></p>
+                <p class="mb-0 co-d">
+                  Location: <span class="co-l f-hl">Caraguatatuba, BR</span>
+                </p>
+                <div class="hotads__main_content-info-button w-mc ai-c mt-2">
+                  <button class="btn-red m-0 center ai-c py-2">$1050</button>
+                  <button class="btn-red mx-0 ai-c">
+                    <i class="fas fa-shopping-cart mr-2"></i>
+                    <p>Purchase Details</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hotads__arrow_circle round w-mc ai-c jc-c co-r">></div>
+        </div>
+      </div>
+
+      <div class="products bg-lighter py-4">
+        <div class="products__display w-90 center">
+          <div class="products__display__header ai-c mb-3 co-d">
+            <i class="fas fa-guitar mr-4 co-l"></i>
+            <h5>Acoustic Guitars</h5>
+            <p class="my-0 ml-5 co-l f-hl">
+              (Classic guitars, flamenco guitars and folk guitars.)
+            </p>
+          </div>
+          <div class="products__display__cards ai-c jc-sb">
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__display w-90 center mt-5">
+          <div class="products__display__header ai-c mb-3 co-d">
+            <i class="fas fa-guitar mr-4 co-l"></i>
+            <h5>Acoustic Guitars</h5>
+            <p class="my-0 ml-5 co-l f-hl">
+              (Classic guitars, flamenco guitars and folk guitars.)
+            </p>
+          </div>
+          <div class="products__display__cards ai-c jc-sb">
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__display w-90 center mt-5 mb-4">
+          <div class="products__display__header ai-c mb-3 co-d">
+            <i class="fas fa-guitar mr-4 co-l"></i>
+            <h5>Acoustic Guitars</h5>
+            <p class="my-0 ml-5 co-l f-hl">
+              (Classic guitars, flamenco guitars and folk guitars.)
+            </p>
+          </div>
+          <div class="products__display__cards ai-c jc-sb">
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+            <div class="products__display__cards-item">
+              <div class="products__display__cards-item--img h-50"></div>
+              <div
+                class="products__display__cards-item--content h-50 mx-3 pt-3"
+              >
+                <h6 class="co-dt">Yamaha Apx 1000 Acoustic Guitar</h6>
+                <p class="co-r f-gb my-0">Used</p>
+                <span class="co-l"
+                  >From:<span class="co-dt"> Caraguatatuba, BR</span></span
+                >
+                <div class="ai-c jc-sb mt-2">
+                  <div class="plus co-l ai-c jc-c">+</div>
+                  <div class="price co-r f-hm">$1000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__main h-80 w-90 center jc-sb pt-4">
+        <div class="footer__main__about px-3 w-35">
+          <div class="footer__main__about__logo">
+            <div class="ai-c jc-c mb-3">
+              <div class="footer__logo mr-3">
+                <img
+                  class="footer__logo__img"
+                  src="images/waves-icon.png"
+                  alt="waves-icon"
+                />
+              </div>
+              <div class="footer__logo__name brand-name--sm-w">WAVVES</div>
+            </div>
+          </div>
+          <p class="co-l f-hl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi unde
+            quisquam quibusdam molestiae eos sit odit dolor totam vel minima
+            quam modi sint, tempora numquam cum, commodi itaque sed soluta?
+          </p>
+        </div>
+        <div class="footer__main__categories w-20 px-3">
+          <div class="footer__main--title">CATEGORIES</div>
+          <div class="jc-sb">
+            <ul class="links">
+              <li><a href="#">Guitars</a></li>
+              <li><a href="#">Violins</a></li>
+              <li><a href="#">Flutes</a></li>
+              <li><a href="#">Pianos</a></li>
+              <li><a href="#">Percussion</a></li>
+              <li><a href="#">Equipments</a></li>
+            </ul>
+            <ul class="links">
+              <li><a href="#">Guitars</a></li>
+              <li><a href="#">Violins</a></li>
+              <li><a href="#">Flutes</a></li>
+              <li><a href="#">Pianos</a></li>
+              <li><a href="#">Percussion</a></li>
+              <li><a href="#">Equipments</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__main__navigation w-12 px-3">
+          <div class="footer__main--title">NAVIGATION</div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <div class="footer__main__options w-25 px-3 flex-col jc-c">
+          <div class="footer__main__options--item jc-sb ai-c">
+            <span class="co-r f-gb w-50">COUNTRY</span>
+            <button class="btn-transparent w-50">Brazil</button>
+          </div>
+          <div class="footer__main__options--item jc-sb ai-c my-2">
+            <span class="co-r f-gb w-50">LANGUAGE</span>
+            <button class="btn-transparent w-50">Portuguese</button>
+          </div>
+          <div class="footer__main__options--item jc-sb ai-c">
+            <span class="co-r f-gb w-50">CURRENCY</span>
+            <button class="btn-transparent w-50">BRL</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom__copyright"></div>
+        <div class="footer__bottom_social"></div>
+      </div>
+    </footer>
   </body>
 </html>

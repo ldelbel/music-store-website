@@ -54,9 +54,18 @@
     font-size: 1.5em;
   }
 
+  &--sm-l {
+    @extend .brand-name;
+    color: $light;
+    font-size: 1.5em;
+  }
+
   &--lg-w {
     @extend .brand-name;
     color: white;
+    font-size: 5em;
+    line-height: 1em;
+    text-shadow: -2px -1px 1px rgb(116, 116, 116);
   }
 }
 
@@ -74,6 +83,10 @@
   color: $dark;
 }
 
+.co-dt {
+  color: $dark-text;
+}
+
 .co-r {
   color: $red;
 }
@@ -83,7 +96,6 @@
 }
 
 // FONT CLASSES
-
 .f-hl {
   font-family: "Helvetica Neue Light";
 }

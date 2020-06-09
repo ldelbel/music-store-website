@@ -9,8 +9,15 @@
 
 nav {
   height: 3.8125em;
-  max-width: 80em;
-  margin: 0 auto;
+    margin: 0 auto;
+}
+
+h6 {
+  font-size: 0.975em;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .nav__brand {
@@ -27,3 +34,162 @@ nav {
   filter: invert(40%) sepia(69%) saturate(569%) hue-rotate(301deg) brightness(92%) contrast(88%);
 }
 
+.upper {
+  height: 22.5625em;
+}
+
+.hotads {
+  height: 19.5625em;
+  border-bottom: 0.1em solid $lg-m;
+}
+
+.hotads__main_content-img {
+  width: 22.6875em;
+  height: 13.5em;
+}
+
+.hotads__arrow_circle {
+  width: 3.1875em;
+  height: 3.1875em;
+  border: 0.1em solid $lg-m;
+  background-color: white;
+}
+
+.hotads__main_content-info h3 {
+  font-size: 1.3em;
+}
+
+.hotads__main_content-info p {
+  font-size: 0.8em;
+  margin: 0.5em 0;
+}
+
+.hotads__main_content-img {
+  background: url(../images/cordoba-1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hotads__main_content-info-button button:first-child {
+  height: 3em;
+  border-radius: 0.2em 0 0 0.2em;
+}
+
+.hotads__main_content-info-button button:last-child {
+  height: 3em;
+  border-radius: 0 0.2em 0.2em 0;
+  border-left: 0.05em solid $dark;
+}
+
+.products__display__header {
+  border-bottom: 0.1em solid $lg-m;
+  padding-bottom: 0.9em;
+  -webkit-box-shadow: 0px 10px 7px -11px rgba(252,252,252,1);
+  -moz-box-shadow: 0px 10px 7px -11px rgba(252,252,252,1);
+  box-shadow: 0px 10px 7px -11px rgba(252,252,252,1);
+}
+
+.products__display__header h5 {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.products__display__header p {
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+.fa-guitar {
+  font-size: 1.5em;
+}
+
+.products__display__cards-item {
+  width: 12.5em;
+  height: 17.5625em;
+  background-color: white;
+  border: 0.1em solid $lg-m;
+}
+
+.products__display__cards-item--content > span,
+.products__display__cards-item--content p {
+  font-size: 0.8em;
+}
+
+.products__display__cards-item--content h6 {
+  margin-bottom: 0;
+}
+
+.plus {
+  width: 1.375em;
+  height: 1.375em;
+  border: 0.1em solid $lg-m;
+}
+
+.products__display__cards-item--img {
+  background: url(../images/card-1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.price {
+  font-size: 0.9em;
+}
+
+.products {
+  border-bottom: 0.1em solid $lg-m;
+}
+
+footer {
+  height: 17.125em;
+}
+
+.footer__main--title {
+  color: $red;
+  font-family: "Helvetica Neue 77 Bold Condensed";
+  border-bottom: 0.15em solid $red;
+  padding-bottom: 0.5em;
+}
+
+.footer__logo__img {
+  height: 2.3em;
+  filter: invert(59%) sepia(0%) saturate(25%) hue-rotate(229deg) brightness(91%) contrast(84%);
+}
+
+.footer__logo__name {
+  font-family: 'Fascinate', cursive;
+  color: $light;
+}
+
+.footer__main__about p {
+  text-align: center;
+}
+
+.footer__main__options span {
+  font-size: 0.9em;
+}
+
+.links {
+  padding-top: 1em;
+}
+
+li {
+  font-family: 'Helvetica Neue 65 Medium';
+}
+
+footer a {
+  color: $light;
+  font-size: 0.8em;
+}
+
+footer a:hover {
+  color: $dark;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+footer a:active,
+footer a:focus {
+  outline: none;
+}
