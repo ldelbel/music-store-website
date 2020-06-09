@@ -177,10 +177,6 @@ input {
   font-size: 1.5em;
 }
 
-.results__main_content-info p {
-
-}
-
 .products__display__cards-item--img {
   background: url(../images/card-1.jpg);
   background-size: contain;
@@ -217,12 +213,32 @@ footer {
   color: $light;
 }
 
-.footer__main__about p {
-  text-align: center;
-}
+.footer__main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  &__about p {
+    text-align: center;
+  }
 
-.footer__main__options span {
-  font-size: 0.9em;
+  &__options {
+    min-width: 15em;
+    margin-bottom: 1em;
+  }
+
+  &__options span {
+    font-size: 0.9em;
+  }
+
+  &__categories {
+    min-width: 15em;
+  }
+
+  &__about {
+    min-width: 20em;
+  }
+
 }
 
 .links {
@@ -235,20 +251,33 @@ li {
 
 .footer__bottom {
   border-top: 0.1em solid $lg-m;
-  line-height: 3em;
-  height: 3em;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
 }
 
 .footer__bottom__copyright {
   font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
 }
 
-.footer__bottom_social a {
+.footer__bottom__copyright p {
+  margin-bottom: 0;
+}
+
+.footer__bottom__social {
+  margin-top: 1em;
+}
+
+.footer__bottom__social a {
   font-size: 1.3em;
   padding-right: 0.7em;
+  
  }
 
-.footer__bottom_social a:hover {
+.footer__bottom__social a:hover {
   font-size: 1.8em;
 }
  
@@ -284,13 +313,46 @@ footer a:focus {
   display: inline;
 }
 
-@media only screen and (min-width: 768px) {
+// MEDIA QUERIES .........................................
+@media(min-width: 768px) {
   .nav__brand,
   .nav__menu {
-    margin-right: 5em !important;
+    margin-right: 5%;
   }
   
   .nav__menu__item {
-    margin-right: 4em;
+    margin-right: 5%;
   }
+
+  .nav__brand__logo__img {
+    height: 3em !important; 
+  }
+
+  .brand-name--sm-w {
+    font-size: 1.5em;
+  }
+
+  .footer__bottom {
+    border-top: 0.1em solid $lg-m;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em 1em 1em;
+  
+  }
+
+  .footer__bottom__copyright {
+    flex-direction: row;
+    width: 70%;
+    flex-wrap: wrap;
+  }
+
+  .footer__bottom__social {
+    margin-top: 0;
+  }
+
+  .footer__main {
+    justify-content: space-between;
+  }
+  
 }
