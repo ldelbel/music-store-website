@@ -220,3 +220,33 @@ $dark-text: #474747;
 .bord-r-red {
   border-right: 0.1em solid $red;
 }
+
+.bord {
+  border: 0.1em solid $lg-m;
+}
+
+.bord-x {
+  border-right: 0.1em solid $lg-m;
+  border-left: 0.1em solid $lg-m;
+}
+
+.bord-y {
+  border-top: 0.1em solid $lg-m;
+  border-bottom: 0.1em solid $lg-m;
+}
+
+.bord-t {
+  border-top: 0.1em solid $lg-m;
+}
+
+.bord-b {
+  border-bottom: 0.1em solid $lg-m;
+}
+
+.bord-r {
+  border-right: 0.1em solid $lg-m;
+}
+
+.bord-l {
+  border-left: 0.1em solid $lg-m;
+}

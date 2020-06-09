@@ -1,6 +1,6 @@
 @import 'utilities';
 @import 'typography';
-@import 'mediaqueries';
+@import 'media';
 
 * {
   box-sizing: border-box;
@@ -24,14 +24,20 @@ ul {
 .nav__brand {
   @extend .w-mc;
   display: flex;
+  margin-right: 2em;
+}
+
+.nav__menu {
+  margin-right: 2em;
 }
 
 ::placeholder {
-  color: $dark;
+  color: $dark; 
 }
 
 .nav__menu__item {
-  font-size: 0.1em;
+  font-size: 1em;
+  margin-right: 1em;
 }
 
 .nav__brand__name {
@@ -39,7 +45,7 @@ ul {
 }
 
 .nav__brand__logo__img {
-  height: 3em;
+  height: 2em;
   filter: invert(40%) sepia(69%) saturate(569%) hue-rotate(301deg) brightness(92%) contrast(88%);
 }
 
@@ -57,14 +63,29 @@ ul {
   padding-left: 1em;
 }
 
+input {
+  outline: none;
+}
+
 .hotads {
   height: 19.5625em;
   border-bottom: 0.1em solid $lg-m;
 }
 
-.hotads__main_content-img {
+.hotads__main_content-img,
+.results__main_content-img {
   width: 22.6875em;
   height: 13.5em;
+  background: url(../images/cordoba-1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.results__main_content-img {
+  background-size: cover;
+  height: 14em;
+  margin: auto;
 }
 
 .hotads__arrow_circle {
@@ -77,24 +98,21 @@ ul {
 .hotads__arrow_circle:hover {
   @extend .bg-light;
   cursor: pointer;  
-  border: 0.1em solid $lighter;
+  border: 0.1em solid $light;
   font-size: 1.2em;
 }
 
-.hotads__main_content-info h3 {
+.hotads__main_content-info h3,
+.results__main_content-info h3
+ {
   font-size: 1.3em;
 }
 
-.hotads__main_content-info p {
+.hotads__main_content-info p,
+.results__main_content-info p
+ {
   font-size: 0.8em;
   margin: 0.5em 0;
-}
-
-.hotads__main_content-img {
-  background: url(../images/cordoba-1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .hotads__main_content-info-button button:first-child {
@@ -150,6 +168,17 @@ ul {
   width: 1.375em;
   height: 1.375em;
   border: 0.1em solid $lg-m;
+}
+
+.plus--page {
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.1rem solid $lg-m;
+  font-size: 1.5em;
+}
+
+.results__main_content-info p {
+
 }
 
 .products__display__cards-item--img {
@@ -237,4 +266,23 @@ footer a:hover {
 footer a:active,
 footer a:focus {
   outline: none;
+}
+
+.results__header-p {
+  font-size: 0.9em;
+}
+
+.results__block:hover {
+  background-color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav__brand,
+  .nav__menu {
+    margin-right: 5em !important;
+  }
+  
+  .nav__menu__item {
+    margin-right: 4em;
+  }
 }
