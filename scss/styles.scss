@@ -38,6 +38,16 @@ ul {
   height: 22.5625em;
 }
 
+.search__dropdown-text,
+.search__question {
+  font-size: 0.8em;
+} 
+
+.search__input {
+  border: none;
+  padding-left: 1em;
+}
+
 .hotads {
   height: 19.5625em;
   border-bottom: 0.1em solid $lg-m;
@@ -178,6 +188,25 @@ li {
   font-family: 'Helvetica Neue 65 Medium';
 }
 
+.footer__bottom {
+  border-top: 0.1em solid $lg-m;
+  line-height: 3em;
+  height: 3em;
+}
+
+.footer__bottom__copyright {
+  font-size: 0.8em;
+}
+
+.footer__bottom_social a {
+  font-size: 1.3em;
+  padding-right: 0.7em;
+}
+
+.footer__bottom_social a:hover {
+  font-size: 1.8em;
+}
+ 
 footer a {
   color: $light;
   font-size: 0.8em;
