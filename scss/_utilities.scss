@@ -250,3 +250,11 @@ $dark-text: #474747;
 .bord-l {
   border-left: 0.1em solid $lg-m;
 }
+
+// ANIMATIONS
+
+.shadow-drop-2-center {
+	-webkit-animation: shadow-drop-2-center 2s cubic-bezier(0.190, 1.000, 0.220, 1.000) 2s infinite alternate both;
+	        animation: shadow-drop-2-center 2s cubic-bezier(0.190, 1.000, 0.220, 1.000) 2s infinite alternate both;
+}
+

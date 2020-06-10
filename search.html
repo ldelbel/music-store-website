@@ -35,33 +35,39 @@
             <div class="nav__brand__name brand-name--sm-w">WAVVES</div>
           </div>
 
-          <div class="nav__menu--short p-1 ai-c jc-c">
+          <div class="nav__menu--short px-3 py-1 ai-c jc-c">
             <div><i class="fas fa-bars"></i></div>
             
           </div>
 
-          <div class="nav__menu ai-c tupper">
-            <div class="nav__menu__item co-r ai-c">
-              <div class="nav__menu__item-icon mr-2">
-                <i class="fas fa-home"></i>
+          <a class="nav__menu__item" href="/index.html">
+            <div class="nav__menu ai-c tupper">
+              <div class="nav__menu__item co-r ai-c">
+                <div class="nav__menu__item-icon mr-2">
+                  <i class="fas fa-home"></i>
+                </div>
+                <div class="nav__menu_item-text">home</div>
               </div>
-              <div class="nav__menu_item-text">home</div>
-            </div>
+          </a>
 
-            <div class="nav__menu__item co-l ai-c">
-              <div class="nav__menu__item-icon mr-2">
-                <i class="fas fa-record-vinyl"></i>
+            <a class="nav__menu__item" href="#">
+              <div class="co-l ai-c">
+                <div class="nav__menu__item-icon mr-2">
+                  <i class="fas fa-record-vinyl"></i>
+                </div>
+                <div class="nav__menu_item-text">collection</div>
               </div>
-              <div class="nav__menu_item-text">collection</div>
-            </div>
+            </a>
 
-            <div class="nav__menu__item co-l ai-c">
-              <div class="nav__menu__item-icon mr-2">
-                <i class="fas fa-shopping-cart"></i>
+            <a class="nav__menu__item" href="#">
+              <div class="co-l ai-c">
+                <div class="nav__menu__item-icon mr-2">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="nav__menu_item-text">shopping</div>
               </div>
-              <div class="nav__menu_item-text">purchase list</div>
             </div>
-          </div>
+            </a>
 
           <button class="nav__button btn-red tupper">post</button>
         </div>
@@ -112,8 +118,8 @@
         </div>
       </div>
     </header>
-    <main class="bg-lighter jc-c px-5">
-      <aside class="py-3 bord-r w-25">
+    <main class="page-flex bg-lighter jc-c px-5">
+      <aside class="aside-flex py-3 d-none d-md-block">
         <div class="aside__header ai-c">
           <label class="container ai-c">
             <input type="checkbox">
@@ -142,42 +148,50 @@
           </div>
         </div>
         <div class="aside__block py-2">
-          <div class="aside__block__title ml-3 mb-3 pb-1 bord-b f-gb co-dt">Type</div>
+          <div class="aside__block__title ml-3 mb-3 pb-1 bord-b f-gb co-dt">Wood</div>
           <div class="aside__block__content">
             <label class="container ai-c">
               <input type="checkbox">
-              <span class="ml-2 co-dt">Classical</span>
+              <span class="ml-2 co-dt">Jacarandá</span>
             </label>
             <label class="container ai-c">
               <input type="checkbox">
-              <span class="ml-2 co-dt">Folk</span>
+              <span class="ml-2 co-dt">Mogno</span>
             </label>
             <label class="container ai-c">
               <input type="checkbox">
-              <span class="ml-2 co-dt">Flat</span>
+              <span class="ml-2 co-dt">Rosewood</span>
             </label>
           </div>
         </div>
         <div class="aside__block py-2">
-          <div class="aside__block__title ml-3 mb-3 pb-1 bord-b f-gb co-dt">Type</div>
+          <div class="aside__block__title ml-3 mb-3 pb-1 bord-b f-gb co-dt">Price Range</div>
           <div class="aside__block__content">
             <label class="container ai-c">
               <input type="checkbox">
-              <span class="ml-2 co-dt">Classical</span>
+              <span class="ml-2 co-dt">100$ - 500$</span>
             </label>
             <label class="container ai-c">
               <input type="checkbox">
-              <span class="ml-2 co-dt">Folk</span>
+              <span class="ml-2 co-dt">501$ - 1000$</span>
             </label>
-            <label class="container ai-c">
+            <label class="container ai-c d-none d-md-block">
               <input type="checkbox">
-              <span class="ml-2 co-dt">Flat</span>
+              <span class="ml-2 co-dt">1001$ - 1500$</span>
+            </label>
+            <label class="container ai-c d-none d-md-block">
+              <input type="checkbox">
+              <span class="ml-2 co-dt">1501$ - 2000$</span>
+            </label>
+            <label class="container ai-c d-none d-md-block">
+              <input type="checkbox">
+              <span class="ml-2 co-dt">2001$ - 2500$</span>
             </label>
           </div>
         </div>
       </aside>
       <div>
-        <section class="results bg-lighter bord-r">
+        <section class="results bg-lighter bord-x">
           <div class="results__header">
             <p class="results__header-p co-dt bord-b py-3 pl-3 m-0">1020 Results for <b>"Flat Electric"</b> search at Montreal in Category <b>Guitars.</b></p>
           </div>

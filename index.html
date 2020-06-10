@@ -35,33 +35,39 @@
             <div class="nav__brand__name brand-name--sm-w">WAVVES</div>
           </div>
 
-          <div class="nav__menu--short p-1 ai-c">
-            <div><i class="fas fa-bars mr-2"></i></div>
-            <span>MENU</span>
+          <div class="nav__menu--short px-3 py-1 ai-c">
+            <div><i class="fas fa-bars"></i></div>
           </div>
 
           <div class="nav__menu ai-c tupper">
-            <div class="nav__menu__item co-r ai-c">
-              <div class="nav__menu__item-icon mr-2">
-                <i class="fas fa-home"></i>
-              </div>
-              <div class="nav__menu_item-text">home</div>
-            </div>
 
-            <div class="nav__menu__item co-l ai-c">
-              <div class="nav__menu__item-icon mr-2">
-                <i class="fas fa-record-vinyl"></i>
+            <a class="nav__menu__item" href="/index.html">
+              <div class="nav__menu__item co-r ai-c">
+                <div class="nav__menu__item-icon mr-2">
+                  <i class="fas fa-home"></i>
+                </div>
+                <div class="nav__menu_item-text">home</div>
               </div>
-              <div class="nav__menu_item-text">collection</div>
-            </div>
+            </a>
 
-            <div class="nav__menu__item co-l ai-c">
-              <div class="nav__menu__item-icon mr-2">
-                <i class="fas fa-shopping-cart"></i>
+            <a class="nav__menu__item" href="#">
+              <div class="nav__menu__item co-l ai-c">
+                <div class="nav__menu__item-icon mr-2">
+                  <i class="fas fa-record-vinyl"></i>
+                </div>
+                <div class="nav__menu_item-text">collection</div>
               </div>
-              <div class="nav__menu_item-text">purchase list</div>
+            </a>
+
+            <a class="nav__menu__item href="#">
+              <div class="nav__menu__item co-l ai-c">
+                <div class="nav__menu__item-icon mr-2">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="nav__menu_item-text">shopping</div>
+              </div>
             </div>
-          </div>
+            </a>
 
           <button class="nav__button btn-red tupper">post</button>
         </div>
@@ -85,10 +91,10 @@
             Your marketplace for buying and selling Musical Instruments
           </h5>
         </div>
-        <div class="search container-fluid ai-c jc-sb w-80">
-          <div class="h-search w-85 ai-c">
+        <div class="search container-fluid ai-c jc-sb w-100">
+          <div class="search-top h-search ai-c">
             <div
-              class="search__dropdown bg-white h-100 w-20 bord-r-red ai-c pl-1 pr-3"
+              class="search__dropdown bg-white h-100 w-20 bord-r-red ai-c pl-1 pr-3  d-none d-md-flex"
             >
               <div class="search__dropdown-icon co-dt m-2">
                 <i class="fas fa-caret-down"></i>
@@ -96,18 +102,18 @@
               <div class="search__dropdown-text co-dt f-gl">Instruments</div>
             </div>
             <div
-              class="search__question bg-white h-100 w-40 bord-r-red co-l ai-c f-gl pl-2"
+              class="search__question bg-white h-100 bord-r-red co-l ai-c f-gl pl-2"
             >
               What do you search for?
             </div>
             <input
               type="text"
               placeholder="Search"
-              class="search__input h-100 w-40 co-l"
+              class="search__input h-100 co-l"
             />
           </div>
-          <div class="h-100 w-13">
-            <button class="search__button btn-dark w-100">Search</button>
+          <div class="search-btn-div h-100">
+            <a href="/search.html"><button class="search__button btn-dark w-100 shadow-drop-2-center">Search</button></a>
           </div>
         </div>
       </div>
@@ -115,7 +121,7 @@
     <main>
       <div class="hotads py-3 co-l f-hm">
         <div class="container w-75 ai-c h-100 px-0">
-          <div class="hotads__arrow_circle round w-mc ai-c jc-c co-r">
+          <div class="hotads__arrow_circle round w-mc ai-c jc-c co-r d-none d-md-flex">
             <i class="fas fa-chevron-left"></i>
           </div>
 
@@ -125,12 +131,15 @@
               <div class="hotads__main_content-img"></div>
               <div class="hotads__main_content-info w-55 py-3">
                 <h3 class="co-r f-hm">Flamenco Guitar - Cordoba C5</h3>
-                <p class="f-hl co-d">
+                <div class="fixed-p">
+
+                <p class="fixed-p f-hl co-d">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Reprehenderit alias tempora officia molestiae assumenda
                   ratione debitis ipsum explicabo voluptates nemo, sequi fugiat
                   ex animi mollitia enim numquam totam, tempore ut?
                 </p>
+                </div>
                 <p class="co-d">By: <span class="co-l f-hl">John Doe</span></p>
                 <p class="mb-0 co-d">
                   Location: <span class="co-l f-hl">Caraguatatuba, BR</span>
@@ -145,7 +154,7 @@
               </div>
             </div>
           </div>
-          <div class="hotads__arrow_circle round w-mc ai-c jc-c co-r">
+          <div class="hotads__arrow_circle round w-mc ai-c jc-c co-r d-none d-md-flex">
             <i class="fas fa-chevron-right"></i>
           </div>
         </div>

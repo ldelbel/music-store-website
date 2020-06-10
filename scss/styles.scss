@@ -1,11 +1,14 @@
 @import 'utilities';
 @import 'typography';
-@import 'media';
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 nav {
@@ -19,6 +22,11 @@ h6 {
 
 ul {
   list-style-type: none;
+}
+
+.nav--left {
+  width: 100%;
+  justify-content: space-between;
 }
 
 .nav__brand {
@@ -216,6 +224,11 @@ a:focus {
   margin-bottom: 0;
 }
 
+.products__display__cards {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .fa-guitar {
   font-size: 1.5em;
 }
@@ -225,6 +238,7 @@ a:focus {
   height: 17.5625em;
   background-color: white;
   border: 0.1em solid $lg-m;
+  margin-right: 3em;
 }
 
 .products__display__cards-item--content > span,
@@ -254,6 +268,10 @@ a:focus {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.products__display__cards-item {
+  min-width: 11.375em;
 }
 
 .price {
@@ -315,6 +333,11 @@ footer {
 
 .links {
   padding-top: 1em;
+}
+
+.fixed-p {
+  height: 3.6rem;
+  overflow: hidden;
 }
 
 li {
@@ -386,6 +409,9 @@ footer a:focus {
    width: 100%;
 }
 
+label {
+  font-size: 0.85em;
+}
 
 .results__block:hover {
   background-color: white;
@@ -411,8 +437,16 @@ footer a:focus {
   width: 50%;
 }
 
+.page-flex {
+  flex-direction: column;
+}
+
 // MEDIA QUERIES .........................................
 @media(min-width: 768px) {
+  .nav--left {
+    width: 60%;
+  }
+
   .nav__menu--short {
     display: none;
   }
@@ -493,5 +527,33 @@ footer a:focus {
 
   .results__main_content-info {
     width: 55%;
+  }
+
+  .page-flex {
+    flex-direction: row;
+  }
+
+  .aside-flex {
+    display: block;
+    width: 25%;
+  }
+
+  .aside__block,
+  .aside__block__content {
+  display: inline;
+}
+
+.aside__block {
+  width: 100%;
+}
+}
+
+@media(max-width: 500px) {
+  .results__main_content-img {
+    width: 65vw;
+  }
+
+  .results__block {
+    overflow: hidden;
   }
 }
