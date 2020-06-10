@@ -1110,6 +1110,23 @@ ul {
   margin: auto 0;
 }
 
+.watermark, .watermark-2 {
+  position: absolute;
+  top: -5em;
+  z-index: 1;
+  height: 25em;
+  opacity: 25%;
+}
+
+.watermark-2 {
+  height: 35em;
+}
+
+.z-2 {
+  z-index: 2;
+  position: relative;
+}
+
 .nav__brand__logo__img {
   height: 2em;
   filter: invert(40%) sepia(69%) saturate(569%) hue-rotate(301deg) brightness(92%) contrast(88%);
@@ -1117,6 +1134,15 @@ ul {
 
 .upper {
   height: 22.5625em;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.upper-page {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
 }
 
 .messages {
