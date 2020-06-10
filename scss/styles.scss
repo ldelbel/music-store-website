@@ -7,7 +7,12 @@
   padding: 0;
 }
 
+a {
+  color: $light;
+}
+
 a:hover {
+  color: $light;
   text-decoration: none;
 }
 
