@@ -76,7 +76,9 @@
     text-shadow: -2px -1px 1px rgb(116, 116, 116);
   }
 
-
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 // TRANSFORM UPPERCASE
