@@ -74,44 +74,49 @@ ul {
 
 .messages {
   position: relative;
+
+  &:before {
+    content: '2';
+    font-size: 0.7em;
+    width: 0.9em;
+    height: 0.9em;
+    position: absolute;
+    top: -0.2em;
+    right: -0.2em;
+    border-radius: 50%;
+    background-color: $red;
+    color: $lg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.messages:before {
-  content: '2';
-  font-size: 0.7em;
-  width: 0.9em;
-  height: 0.9em;
-  position: absolute;
-  top: -0.2em;
-  right: -0.2em;
-  border-radius: 50%;
-  background-color: $red;
-  color: $lg;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .profile-icon {
   color: $light;
   font-size: 2em;
   position: relative;
+
+  &:before {
+    content: '2';
+    font-size: 0.5em;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: -0.3em;
+    right: -0.3em;
+    border-radius: 50%;
+    background-color: $red;
+    color: $lg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.profile-icon:before {
-  content: '2';
-  font-size: 0.5em;
-  width: 0.8em;
-  height: 0.8em;
-  position: absolute;
-  top: -0.3em;
-  right: -0.3em;
-  border-radius: 50%;
-  background-color: $red;
-  color: $lg;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.search {
+  flex-direction: column;
 }
 
 .search__dropdown-text,
@@ -149,6 +154,10 @@ a:focus {
   background-size: cover;
   height: 14em;
   margin: auto;
+}
+
+.aside__header {
+  flex-wrap: wrap;
 }
 
 .hotads__arrow_circle {
@@ -368,12 +377,38 @@ footer a:focus {
   display: none;
 }
 
+.results__main_content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.results__main_content-info {
+   width: 100%;
+}
+
+
 .results__block:hover {
   background-color: white;
 }
 
 .results__block:hover button:first-child {
   display: inline;
+}
+
+.search-top {
+  width: 100%;
+}
+
+.search-btn-div {
+  width: 100%;
+}
+
+.search__question {
+  width: 50%;
+}
+
+.search__input {
+  width: 50%;
 }
 
 // MEDIA QUERIES .........................................
@@ -408,6 +443,10 @@ footer a:focus {
     font-size: 1.5em;
   }
 
+  .search {
+    flex-direction: row;
+  }
+
   .footer__bottom {
     border-top: 0.1em solid $lg-m;
     flex-direction: row;
@@ -430,5 +469,29 @@ footer a:focus {
   .footer__main {
     justify-content: space-between;
   }
+
+  .search-top {
+    width: 85%;
+  }
+
+  .search-btn-div {
+    width: 13%;
+  }
+
+  .search__question {
+    width: 40%;
+  }
   
+  .search__input {
+    width: 40%;
+  }
+
+  .results__main_content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .results__main_content-info {
+    width: 55%;
+  }
 }
