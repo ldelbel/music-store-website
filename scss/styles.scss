@@ -10,7 +10,7 @@
 
 nav {
   height: 3.8125em;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 h6 {
@@ -27,12 +27,31 @@ ul {
   margin-right: 2em;
 }
 
+.nav__menu--short {
+  font-size: 1.5em;
+  color: $light;
+  border: 0.02em solid $light;
+  border-radius: 5%;
+
+  &:hover {
+    background-color: $red;
+    border-color: $red;
+    color: $lg;
+    cursor: pointer;
+  }
+}
+ 
 .nav__menu {
   margin-right: 2em;
+  display: none;
 }
 
 ::placeholder {
   color: $dark; 
+}
+
+.nav__button {
+  margin-left: 10%;
 }
 
 .nav__menu__item {
@@ -53,6 +72,48 @@ ul {
   height: 22.5625em;
 }
 
+.messages {
+  position: relative;
+}
+
+.messages:before {
+  content: '2';
+  font-size: 0.7em;
+  width: 0.9em;
+  height: 0.9em;
+  position: absolute;
+  top: -0.2em;
+  right: -0.2em;
+  border-radius: 50%;
+  background-color: $red;
+  color: $lg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-icon {
+  color: $light;
+  font-size: 2em;
+  position: relative;
+}
+
+.profile-icon:before {
+  content: '2';
+  font-size: 0.5em;
+  width: 0.8em;
+  height: 0.8em;
+  position: absolute;
+  top: -0.3em;
+  right: -0.3em;
+  border-radius: 50%;
+  background-color: $red;
+  color: $lg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .search__dropdown-text,
 .search__question {
   font-size: 0.8em;
@@ -63,7 +124,9 @@ ul {
   padding-left: 1em;
 }
 
-input {
+input,
+button:focus,
+a:focus {
   outline: none;
 }
 
@@ -315,9 +378,22 @@ footer a:focus {
 
 // MEDIA QUERIES .........................................
 @media(min-width: 768px) {
+  .nav__menu--short {
+    display: none;
+  }
+
+  .nav__button {
+    margin-left: 15%;
+  }
+
+  .nav__menu {
+    display: flex;
+    font-size: 0.8em;
+  }
+  
   .nav__brand,
   .nav__menu {
-    margin-right: 5%;
+    margin-right: 8%;
   }
   
   .nav__menu__item {
