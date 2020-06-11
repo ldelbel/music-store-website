@@ -1171,6 +1171,7 @@ footer a:focus {
   position: relative;
   overflow: hidden;
   z-index: 0;
+  padding-top: 3em;
 }
 
 .upper-page {
@@ -1587,6 +1588,10 @@ label {
     padding: 0.5em 1em 1em 1em;
   }
 
+  .upper {
+    padding-top: 6em;
+  }
+
   .footer__bottom__copyright {
     flex-direction: row;
     width: 70%;
@@ -1679,6 +1684,10 @@ label {
     overflow: hidden;
   }
 
+  .upper {
+    padding-top: 2em;
+  }
+
   .hotads__main_content {
     flex-direction: column;
   }
@@ -1700,4 +1709,3 @@ label {
     width: 100%;
   }
 }
-
