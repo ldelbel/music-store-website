@@ -54,6 +54,11 @@
     font-size: 1em;
   }
 
+  &--sm-w:hover {
+    @extend .brand-name--sm-w;
+    color: white;
+  }
+
   &--sm-l {
     @extend .brand-name;
     color: $light;

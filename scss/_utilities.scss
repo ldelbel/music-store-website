@@ -133,11 +133,6 @@ $dark-text: #474747;
   .pr-#{$space} {
     padding-right: #{$space}em;
   }
-
-  .px-percent {
-    padding-right: 37.5%;
-    padding-left: 37.5%;
-  }
 }
 
 // BACKGROUND COLORS                   0000000000000000000000000000000000000
@@ -190,6 +185,10 @@ $dark-text: #474747;
   -webkit-box-shadow: inset 0px 72px 14px -76px rgba(255,255,255,0.65);
   -moz-box-shadow: inset 0px 72px 14px -76px rgba(255,255,255,0.65);
   box-shadow: inset 0px 72px 14px -76px rgba(255,255,255,0.65);
+
+  &:hover {
+    background-color: #f01838;
+  }
 }
 
 .btn-dark {
@@ -204,11 +203,11 @@ $dark-text: #474747;
   @extend .bg-transparent;
   color: $dark-text;
   font-family: "Helvetica Neue 65 Medium";
-}
 
-.btn-transparent:hover {
-  @extend .bg-dark;
-  @extend .co-w;
+  &:hover {
+    @extend .bg-dark;
+    @extend .co-w;
+  }
 }
 
 // IMG STYLING 

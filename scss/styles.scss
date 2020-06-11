@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 a {
   color: $light;
 }
@@ -19,6 +23,10 @@ a:hover {
 nav {
   height: 3.8125em;
   margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.25rem;
 }
 
 h6 {
@@ -52,6 +60,10 @@ ul {
     color: $lg;
     cursor: pointer;
   }
+
+  a:hover {
+    color:$lg;
+  }
 }
  
 .nav__menu {
@@ -68,8 +80,12 @@ ul {
 }
 
 .nav__menu__item {
-  font-size: 1em;
+  font-size: 1.1em;
   margin-right: 1em;
+
+  &:hover {
+    color: #f01838;
+  }
 }
 
 .nav__brand__name {
@@ -80,7 +96,7 @@ ul {
   position: absolute;
   top: -5em;
   z-index: 1;
-  height: 25em;
+  height: 35em;
   opacity: 25%;
 
   &-2 {
@@ -132,11 +148,21 @@ ul {
   }
 }
 
+.profile:hover {
+  @extend .bg-light;
+  cursor: pointer;
+  border-radius: 5%;
+}
 
 .profile-icon {
   color: $light;
   font-size: 2em;
   position: relative;
+
+  &:hover {
+    cursor: pointer;
+    color: $lg;
+  }
 
   &:before {
     content: '2';
@@ -206,13 +232,12 @@ a:focus {
   height: 3.1875em;
   border: 0.1em solid $lg-m;
   background-color: white;
-}
 
-.hotads__arrow_circle:hover {
-  @extend .bg-light;
-  cursor: pointer;  
-  border: 0.1em solid $light;
-  font-size: 1.2em;
+  &:hover {
+    cursor: pointer;  
+    border: 0.1em solid $light;
+    font-size: 1.2em;
+  }
 }
 
 .hotads__main_content-info h3,
@@ -352,9 +377,14 @@ footer {
 
 .footer__main {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   
+  &__about {
+    min-width: 20em;
+    width: 100%;
+  }
+
   &__about p {
     text-align: center;
   }
@@ -362,6 +392,7 @@ footer {
   &__options {
     min-width: 15em;
     margin-bottom: 1em;
+    width: 100%;
   }
 
   &__options span {
@@ -370,12 +401,12 @@ footer {
 
   &__categories {
     min-width: 15em;
+    width: 100%;
   }
 
-  &__about {
-    min-width: 20em;
+  &__navigation {
+    width: 100%;
   }
-
 }
 
 .links {
@@ -396,6 +427,7 @@ li {
   display: flex;
   flex-direction: column;
   padding-top: 1em;
+  margin-bottom: 2em;
 }
 
 .footer__bottom__copyright {
@@ -464,8 +496,6 @@ label {
   transition: background-color 1s;
 }
 
-
-
 .results__block:hover {
   background-color: white;
 }
@@ -523,7 +553,7 @@ label {
   }
 
   .nav__brand__logo__img {
-    height: 3em !important; 
+    height: 3em; 
   }
 
   .brand-name--sm-w {
@@ -554,7 +584,21 @@ label {
   }
 
   .footer__main {
-    justify-content: space-between;
+    &__about {
+      width: 35%;
+    }
+
+    &__categories {
+      width: 20%;
+    }
+
+    &__navigation {
+      width: 15%;
+    }
+
+    &__options {
+      width: 25%;
+    }
   }
 
   .search-top {
