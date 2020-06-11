@@ -2,7 +2,7 @@
 This project is a model of an online musical instruments store website. It is based on the prototype made by Mohammed Awad. 
 > This project is my HTML & CSS Capstone Project in Microverse.
 
-![screenshot](./images/screenshot.jpg)
+![screenshot](./images/screenshot.png)
 
 ## Built With
 
