@@ -1,8 +1,31 @@
-$spaceamounts: (0,1,2,3,4,5,6,7,8,9,10); 
-$percent: (5,10,13,14,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100);
+$spaceamounts: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+$percent: (
+  5,
+  10,
+  13,
+  14,
+  15,
+  20,
+  25,
+  30,
+  35,
+  40,
+  45,
+  50,
+  55,
+  60,
+  65,
+  70,
+  75,
+  80,
+  85,
+  90,
+  95,
+  100
+);
 $dark: #383838;
 $light: #888;
-$lg: #F3F3F3;
+$lg: #f3f3f3;
 $lg-m: #dbdbdb;
 $red: #d35266;
 $dark-text: #474747;
@@ -30,9 +53,9 @@ $dark-text: #474747;
   height: 3em;
 }
 
-// CUSTOM FLEX              0000000000000000000000000000000000 
+// CUSTOM FLEX              0000000000000000000000000000000000
 .flex {
-  display: flex; 
+  display: flex;
 }
 
 .ai-c {
@@ -182,9 +205,9 @@ $dark-text: #474747;
   @extend %btn;
   @extend .bg-red;
   color: #fff;
-  -webkit-box-shadow: inset 0px 72px 14px -76px rgba(255,255,255,0.65);
-  -moz-box-shadow: inset 0px 72px 14px -76px rgba(255,255,255,0.65);
-  box-shadow: inset 0px 72px 14px -76px rgba(255,255,255,0.65);
+  -webkit-box-shadow: inset 0px 72px 14px -76px rgba(255, 255, 255, 0.65);
+  -moz-box-shadow: inset 0px 72px 14px -76px rgba(255, 255, 255, 0.65);
+  box-shadow: inset 0px 72px 14px -76px rgba(255, 255, 255, 0.65);
 
   &:hover {
     background-color: #f01838;
@@ -210,7 +233,7 @@ $dark-text: #474747;
   }
 }
 
-// IMG STYLING 
+// IMG STYLING
 .round {
   border-radius: 50%;
 }
