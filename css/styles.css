@@ -1691,4 +1691,13 @@ label {
   .hotads {
     height: auto;
   }
+
+  .search__question {
+    display: none;
+  }
+
+  .search__input {
+    width: 100%;
+  }
 }
+
