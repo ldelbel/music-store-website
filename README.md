@@ -16,7 +16,7 @@ The goal in this project was to apply all the basic HTML & CSS functions the bes
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/ldelbel/music-store-website/c529845f3ebe98a33fd2e2fb16ea225099d96e27/index.html)
+[Live Demo Link](https://ldelbel.github.io/music-store-website/)
 
 ## Getting Started
 
