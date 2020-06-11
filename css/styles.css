@@ -1251,6 +1251,10 @@ footer a:focus {
   border-bottom: 0.1em solid #dbdbdb;
 }
 
+.hotads-cont {
+  width: 100%;
+}
+
 .hotads__main_content-img,
 .results__main_content-img {
   width: 22.6875em;
@@ -1282,6 +1286,10 @@ footer a:focus {
   cursor: pointer;
   border: 0.1em solid #888;
   font-size: 1.2em;
+}
+
+.hotads__main_content-info {
+  width: 100%;
 }
 
 .hotads__main_content-info h3,
@@ -1648,6 +1656,14 @@ label {
     width: 100%;
   }
 
+  .hotads-cont {
+    width: 75%;
+  }
+
+  .hotads__main_content-info {
+    width: 55%;
+  }
+
   .hotads__main_content-info-button button:first-child,
   .hotads__main_content-info-button button:last-child {
     height: 3em;
@@ -1665,6 +1681,11 @@ label {
 
   .hotads__main_content {
     flex-direction: column;
+  }
+
+  .hotads__main_content-img {
+    width: 80vw;
+    height: 60vw;
   }
 
   .hotads {
