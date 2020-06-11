@@ -1,8 +1,11 @@
 # music-store-website
 This project is a model of an online musical instruments store website. It is based on the prototype made by Mohammed Awad. 
+
 > This project is my HTML & CSS Capstone Project in Microverse.
 
-![screenshot](./images/screenshot.jpg)
+The goal in this project was to apply all the basic HTML & CSS functions the best way possible to wrap up all the knowledge acquired along the HTML & CSS section of Microverse Learning Program. It was built using Sass.
+
+![screenshot](./images/screenshot1.png)
 
 ## Built With
 
@@ -13,7 +16,7 @@ This project is a model of an online musical instruments store website. It is ba
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://rawcdn.githack.com/ldelbel/music-store-website/c529845f3ebe98a33fd2e2fb16ea225099d96e27/index.html)
 
 ## Getting Started
 
